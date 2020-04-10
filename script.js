@@ -2,7 +2,7 @@ window.onload = function () {
     document.addEventListener('keypress', function (e) {
         if (e.key == 'Enter') {
             e.preventDefault();
-            const input = document.getElementById('textInput').value;
+            const input = document.getElementById('input').value;
             const clean = input.replace(/\s+/g, ' ');
             const words = clean.split(" ");
             const beep = new Audio('audio/beep.wav');
@@ -12,7 +12,7 @@ window.onload = function () {
             let output = '';
             let audioArr = [];
 
-            document.getElementById('textInput').value = '';
+            document.getElementById('input').value = '';
             for (let i = 0; i < words.length; i++) {
                 if (words[i].length < 4) {
                     output += 'boop ';
@@ -43,10 +43,10 @@ window.onload = function () {
                 }
             }
         }
-    })
+    });
     document.addEventListener('keyup', function (e) {
         if (e.key == 'Escape') {
-            document.getElementById('textInput').value = '';
+            document.getElementById('input').value = '';
         }
-    })
+    });
 }
