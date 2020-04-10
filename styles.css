@@ -1,0 +1,65 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: #424242;
+    background-size: cover;
+    font-family: monospace;
+    color: #00ff00;
+}
+.main {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 80%;
+    min-width: 800px;
+}
+
+#output, #textInput  {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 550px;
+    background: #000000;
+    border: 4px solid #e7e7e7;
+    border-top: 30px solid #e7e7e7;
+    resize: none;
+    padding: 20px;
+    font-size: inherit;
+    float: left;
+    color: #00ff00;
+    font-size: 30px;
+    outline: none;
+    user-select: none;
+}
+
+#output {
+    height: 350px;
+}
+
+#textInput {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-top: none;
+    text-indent: 45px;
+    caret-color: transparent;
+    height: 300px;
+}
+
+.output, .input {
+    overflow: hidden;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    left: 40%;
+    top: 5px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.label {
+    position: absolute;
+    left: 24px;
+    top: 20px;
+    color: #ffffff;
+    font-size: 30px;
+}
