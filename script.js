@@ -14,13 +14,13 @@ window.onload = function () {
 
             document.getElementById('input').value = '';
             for (let i = 0; i < words.length; i++) {
-                if (words[i].length < 4) {
+                if (words[i].toLowerCase.includes('a')) {
                     output += 'boop ';
                     audioArr.push(boop);
-                } else if (words[i].length < 6) {
+                } else if (words[i]..toLowerCase.includes('e')) {
                     output += 'beep ';
                     audioArr.push(beep);
-                } else if (words[i].length < 10) {
+                } else if (words[i]..toLowerCase.includes('o')) {
                     output += 'BOOP ';
                     audioArr.push(boopBoop);
                 } else {
@@ -30,7 +30,7 @@ window.onload = function () {
             }
 
             document.getElementById('output').value = output;
-            var play = setInterval(playAudio, 150);
+            var play = setInterval(playAudio, 300);
             let i = 0;
 
             function playAudio() {
